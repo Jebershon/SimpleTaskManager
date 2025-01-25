@@ -7,7 +7,6 @@ let info=[];
 function TaskControl()
 {
     const [data,setData]=useState([]);
-    const [dis,setDis]=useState("");
     
     function del(index){
       setData(data.filter(x=>x!==data[index]));
@@ -26,7 +25,6 @@ function TaskControl()
           let temp=store();
           data.push(temp);
           setData(data);
-          setDis(dt);
         }
         else{
         alert("Empty");
